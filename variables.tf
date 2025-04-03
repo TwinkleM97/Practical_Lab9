@@ -18,3 +18,11 @@ variable "db_password" {
   description = "Database password"
   sensitive   = true
 }
+
+variable "duplicate_subnets" {
+  default = ["subnet-1", "subnet-2", "subnet-1"]
+}
+
+variable "subnet_ids" {
+  default = ["subnet-1", "subnet-2", "subnet-3", "subnet-4"]
+}
